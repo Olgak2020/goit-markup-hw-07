@@ -1,0 +1,36 @@
+.section-hero {
+    background-color:$colorbgsecondary ;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient($colorbackdrop,
+            $colorbgimage,
+        $colorbgimage),
+        url('../images/overlay1.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-title .button-hero {
+    display: inline;
+    padding-bottom: 180px;
+}
+
+.hero-title>.title-hero {
+
+    margin: 0 auto 30px;
+    width: 696px;
+    text-align: center;
+    color:$colortitleprimary ;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    
+    text-transform: uppercase;
+
+}

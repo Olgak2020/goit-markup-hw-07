@@ -1,0 +1,54 @@
+.header-nav__auth-nav {
+
+    @extend %flexaling;
+    margin-left: auto;
+
+
+
+& .item {
+    margin-left: 50px;
+}
+
+
+
+& .link {
+    padding: 32px 0;
+}
+}
+
+.auth-tel {
+    color:$colortext;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: $transition-color;
+}
+
+.auth-info {
+    @extend %flexaling;
+    justify-content: space-between;
+    
+    color:$colortext;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition:$transition-color;
+
+&:hover,
+&:focus {
+    color:$coloraccent ;
+
+}
+}
+
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+

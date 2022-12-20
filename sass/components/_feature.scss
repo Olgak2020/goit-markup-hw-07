@@ -1,0 +1,50 @@
+.section-feature {
+    padding-top: $commonpadding;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.feature {
+    display: flex;
+    gap: 30px;
+
+&>.feature__item {
+
+    flex-basis: calc(100% / 4);
+
+}
+
+&-icon {
+    @extend %flexjustyaling;
+    height: 128px;
+      
+    background-color: $colorbg;
+    margin-bottom: 32px;
+}
+&-title {
+    margin-bottom: 10px;
+
+    color:$colortitle ;
+    @include font(700, 14px, 1.14, 0.03em);
+  
+
+    text-transform: uppercase;
+    
+
+}
+&-text {
+    @include font ( null, 14px, 1.71, 0.03em);
+        
+    color:$colortext;
+}
+}
+
+.section-feature {
+    padding-top: $commonpadding;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
