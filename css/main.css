@@ -687,7 +687,7 @@ img {
   width: 44px;
   height: 44px;
 }
-.public__social-list:not(:last-child) {
+.public__social-link :not(:last-child) {
   margin-right: 10px;
 }
 .public__social-link {
@@ -835,14 +835,14 @@ img {
 .project__item {
   width: calc((100% - 60px) / 3);
 }
-.project__link {
+.project__facility {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project__link:hover {
+.project__facility:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.project__link:hover .project__overtext {
+.project__facility:hover .project__overtext {
   transform: translateY(0);
 }
 .project__overlay {
