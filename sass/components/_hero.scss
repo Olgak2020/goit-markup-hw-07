@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
     background-color:$colorbgsecondary ;
     max-width: 1600px;
     height: 600px;
@@ -12,14 +12,10 @@
     background-position: center;
     text-align: center;
     padding: 200px 0;
-}
 
-.hero-title .button-hero {
-    display: inline;
-    padding-bottom: 180px;
-}
 
-.hero-title>.title-hero {
+
+   &__demo > &__title-hero {
 
     margin: 0 auto 30px;
     width: 696px;
@@ -33,4 +29,5 @@
     
     text-transform: uppercase;
 
+}
 }

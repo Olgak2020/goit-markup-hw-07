@@ -4,56 +4,23 @@
     text-decoration: none;
     padding-top: 60px;
     padding-bottom: 60px;
-
-
-    &-input {
-            display: inline-flex;
-            width: 100%;
-            padding-left: 16px;
-            margin-right: 12px;
-            font-size: 16px;
-            color: $colorft;
-            background-color: transparent;
-            border-radius: 4px;
-            border: 1px solid $colorftborder;
-            outline: transparent;
-            box-shadow: 0px 4px 4px 0px $colorshadow;
-            transition: $transition-color;
-    
-        }
-
-&-input:focus,
-&-input:hover {
-
-    border-color: $coloraccent;
 }
 
-&-input::placeholder {
-    font-size: 16px;
-    color: $colorft;
-    transition:$transition-color ;
-}
 
-&-info:hover,
-&-info:focus {
-    color: $coloraccent;
-
-}
-
-& .container {
+.footer .container {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-}
-
-&-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
 
 }
 
-&-text {
+
+.public {
+    margin-left: 70px;
+    justify-content: center;
+    align-items: flex-end;
+
+&__footer-text {
     margin-bottom: 20px;
     color: $colortitleprimary;
 
@@ -66,104 +33,123 @@
 
 }
 
+&__action{
+    @extend %flexjustyaling;
+
 }
 
-.container-address {
-    display: inline-block;
+&__social-list {
+    width: 44px;
+    height: 44px;
 }
 
-.address {
-    font-style: normal;
-    font-weight: 400;
+&__social-list:not(:last-child) {
+    margin-right: 10px;
 
-
-    & .link {
-        color: $colortitleprimary;
-        min-width: 231px;
-
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-
-        transition: $transition-color ;
-
-    }
-
-    & .link:hover,
-    & .link:focus {
-        color: $coloraccent ;
-    }
 }
 
-.container-social {
-    margin-left: 70px;
-    justify-content: center;
-    align-items: flex-end;
 
-& .social-item-icon {
-    fill: $colorbg;
-}
-& .social-item-link {
+&__social-link {
     background-color: $colorbg-link;
 }
 
-& .social-item-link:hover {
+&__social-link:hover {
     background-color: $coloraccent;
 }
+
+
+&__social-icon {
+    fill: $colorbg;
 }
 
+&__social-link {
+    @extend %flexjustyaling;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 
+    transition: $transition-bg;
 
+}
+}
 
-.container-email {
+.subscribe {
     margin-left: auto;
 
     width: 570px;
     display: block;
+
+
+&__footer-text {
+    margin-bottom: 20px;
+    color: $colortitleprimary;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+
 }
 
-
-
-
-
-
-.sub-email {
+&__search-form {
 
     width: 100%;
     display: flex;
     margin: 0 auto;
+}
+
+&__footer-input {
+    display: inline-flex;
+    width: 100%;
+    padding-left: 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    color: $colorft;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid $colorftborder;
+    outline: transparent;
+    box-shadow: 0px 4px 4px 0px $colorshadow;
+    transition: $transition-color, $transition-border
+}
+
+ &__footer-input:focus,
+  &__footer-input:hover {
+
+    border-color: $coloraccent;
+}
+
+  &__footer-input::placeholder {
+    font-size: 16px;
+    color: $colorft;
+    transition: $transition-color ;
+}
+}
 
 
+.primary-button {
 
-& .primary-button {
-    @extend %flexaling;
-    justify-content: space-between;
+    display:inline-flex;
+   align-items: center;
+   justify-content: space-between;
     
     min-width: 200px;
     padding-left: 28px;
     padding-right: 28px;
-}
-}
 
 
-.sub-button {
+
+
+&__sub-button {
+
     fill:$colortitleprimary ;
 }
 
 
-.container-address .footer-info {
-    transition: $transition-color;
-    color:$colorftborder;
+&__sub-button{
 
+   fill: $colortitleprimary ;
 }
-
-
-.logo-footer {
-    color: $colortitleprimary;
-}
-
-
-.logo-foot {
-    display: inline-block;
-    margin-bottom: 20px;
 }

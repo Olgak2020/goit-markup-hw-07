@@ -1,5 +1,6 @@
-.header-nav__logo {
-
+.logo {
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     
     font-weight: 700;
@@ -9,12 +10,22 @@
    
     text-decoration: none;
 
-&-web {
+
+&__logo-footer {
+        color: $colortitleprimary;
+    }
+
+
+   &__logo-web {
     color:$coloraccent ;
 }
 
-&-studio {
+   &__logo-studio {
     color: $colortitlesecondary;
 }
-
 }
+
+
+
+
+

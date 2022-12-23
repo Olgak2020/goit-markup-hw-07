@@ -1,26 +1,82 @@
-.section-team {
+.team {
     padding-bottom: $commonpadding;
     padding-top: $commonpadding ;
     background-color: $colorbg;
+
+
+   &__pre-title {
+     margin-bottom: 50px;
+
+     color: $colortitle ;
+     Font-style: Bold;
+     text-align: center;
+
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+
+     Vertical-align: Top;
+
+ }
+      &__team-list {
+       display: flex;
+}
+
+     &__team-list> &__card {
+    flex-basis: calc(100%/4);
+    margin-right: 30px;
+}
+
+      &__team-list> &__card:nth-child(4) {
+    margin-right: 0;
+}
+
+    &__card {
+    background-color: $colortitleprimary ;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px $colorshadow;
+}
+
+    &__card-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 
-.action-social {
+   &__team-text {
+    text-align: center;
+    margin-bottom: 16px;
+    @include font (null, 16px, 1.19, 0.03em);
+
+}
+
+  &__team-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: $colortitle ;
+    @include font (500, 16px, 1.19, 0.03em);
+
+
+}
+
+    &__action-social {
 @extend %flexjustyaling;
 
 }
 
-.social-list {
+  &__social-list {
     width: 44px;
-    height: 44px;
+    height: 44px;}
 
-&:not(:last-child) {
+  &__social-list:not(:last-child) {
     margin-right: 10px;
 
 }
-}
 
-.social-item-link {
+
+ &__social-item-link {
     @extend %flexjustyaling;
     width: 100%;
     height: 100%;
@@ -28,65 +84,24 @@
       
     transition: $transition-bg;
 
-    &:hover {
-            background-color: $coloraccent;
+}
+
+    &__social-item-link:hover {
+     background-color: $coloraccent;
     
         }
 
-&:hover .social-item-icon {
+&__social-item-link:hover &__social-item-icon {
     fill: $colortitleprimary;
 }
 
 
-}
 
-.social-item-icon {
+
+&__social-item-icon {
     fill: $coloriconfill;
     transition:$transition-fill ;
 }
 
-
-
-.team-list {
-    display: flex;
-
-&>.card {
-    flex-basis: calc(100%/4);
-    margin-right: 30px;
 }
 
-&>.card:nth-child(4) {
-    margin-right: 0;
-}
-
-}
-
-
-.card {
-    background-color:$colortitleprimary ;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px $colorshadow;
-
-
-
-&-team {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-}
-.team-text {
-    text-align: center;
-    margin-bottom: 16px;
-    @include font ( null, 16px, 1.19, 0.03em);
-        
-}
-.team-title {
-    margin-bottom: 10px;
-    text-align: center;
-    color:$colortitle ;
-    @include font ( 500, 16px, 1.19, 0.03em);
-    
-
-}

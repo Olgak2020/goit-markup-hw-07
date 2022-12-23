@@ -1,29 +1,31 @@
-.section-feature {
+.specialty {
     padding-top: $commonpadding;
 
     margin-left: auto;
     margin-right: auto;
 
-}
 
-.feature {
+
+&__feature {
     display: flex;
     gap: 30px;
+}
 
-&>.feature__item {
+
+ &__feature> &__item {
 
     flex-basis: calc(100% / 4);
 
 }
 
-&-icon {
+  &__feature-icon {
     @extend %flexjustyaling;
     height: 128px;
       
     background-color: $colorbg;
     margin-bottom: 32px;
 }
-&-title {
+  &__feature-title {
     margin-bottom: 10px;
 
     color:$colortitle ;
@@ -34,17 +36,10 @@
     
 
 }
-&-text {
+    &__feature-text {
     @include font ( null, 14px, 1.71, 0.03em);
         
     color:$colortext;
 }
-}
-
-.section-feature {
-    padding-top: $commonpadding;
-
-    margin-left: auto;
-    margin-right: auto;
 
 }

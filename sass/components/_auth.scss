@@ -1,33 +1,17 @@
-.header-nav__auth-nav {
+.contakt {
 
     @extend %flexaling;
     margin-left: auto;
 
-
-
-& .item {
+&__item {
     margin-left: 50px;
 }
 
-
-
-& .link {
+&__link {
     padding: 32px 0;
 }
-}
-
-.auth-tel {
-    color:$colortext;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: $transition-color;
-}
-
-.auth-info {
+ 
+&__authinfo {
     @extend %flexaling;
     justify-content: space-between;
     
@@ -39,16 +23,17 @@
     letter-spacing: 0.02em;
 
     transition:$transition-color;
-
-&:hover,
-&:focus {
+}
+&__authinfo:hover,
+&__authinfo:focus {
     color:$coloraccent ;
 
 }
-}
 
-.header-icon {
+
+&__header-icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
+}

@@ -1,10 +1,15 @@
-.section-business {
+.job {
     padding-bottom: $commonpadding;
     padding-top: $commonpadding;
 
+
+   &__business {
+    display: flex;
+    margin-right: auto;
 }
 
-.pre-title {
+
+   &__pre-title {
     margin-bottom: 50px;
 
     color:$colortitle ;
@@ -21,23 +26,20 @@
     }
 
 
-.business {
-    display: flex;
-    margin-right: auto;
 
-&>.item {
+   &__business > &__item {
     position: relative;
     flex-basis: calc(100% /3);
     margin-right: 30px;
 
 }
 
-&>.item:nth-child(3) {
+  &__business > &__item:nth-child(3) {
     margin-right: 0px;
 }
+
+
 }
-
-
 
 .lable-text {
     position: absolute;

@@ -1,18 +1,41 @@
+.customer {
 
-.clients {
+    padding-top: $commonpadding;
+    padding-bottom: $commonpadding;
+
+
+   &__pre-title {
+    margin-bottom: 50px;
+    text-align: center;
+    color:$colortitle;
+    Vertical-align: Top;
+    Font-style: Bold;
+
+ 
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+            
+}
+
+
+
+   &__clients {
     display: flex;
 }
 
-.client-icon {
+ &__client-icon {
     flex-basis: calc(100% /6);
 
 }
 
-.client-icon:not(:last-child) {
+ &__client-icon:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-logo {
+&__client-logo {
     @extend %flexjustyaling;
     fill: $coloriconfill;
     width: 170px;
@@ -29,8 +52,8 @@
 
 
 
-.client-logo:hover,
-.client-logo:focus {
+   &__client-logo:hover,
+   &__client-logo:focus {
     fill:$coloraccent;
     border-color: $coloraccent;
     transform: scale(1.1);
@@ -38,25 +61,4 @@
 
    }
 
-.section-clients {
-
-    padding-top: $commonpadding;
-    padding-bottom: $commonpadding;
 }
-
-.pre-title {
-    margin-bottom: 50px;
-    text-align: center;
-    color:$colortitle;
-    Vertical-align: Top;
-    Font-style: Bold;
-
- 
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-            
-}
-

@@ -1,28 +1,33 @@
-.nav {
+.navigation {
+    @extend %flexaling;
+
+&__list{
     display: flex;
 
     margin-left:$commonpadding;
 
     color:$colortitle;
 
+}
 
-
-& .header-nav__item +.header-nav__item {
+ &__item +&__item {
     margin-left: 50px;
 }
 
-& .link {
+
+ &__link {
     position: relative;
     padding: 32px 0;
     display: flex;
 
 }
 
-& .link.current {
+&__link.current {
     color: $coloraccent;
 }
 
-& .link.current::after {
+
+ &__link.current::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -33,4 +38,26 @@
     background-color:$coloraccent ;
 
 }
+
+&__link {
+
+    color: $colortitle;
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    transition: $transition-color;
+}
+
+&__link:hover,
+&__link:focus {
+    color: $coloraccent ;
+
+}
+
 }

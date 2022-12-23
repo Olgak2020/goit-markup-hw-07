@@ -24,9 +24,9 @@
     box-shadow: 0px 2px 1px 0px $colorbackdrop,
         0px 1px 1px 0px $colormodal-shadow,
         0px 1px 3px 0px $colormodal-boxshodow;
+}
 
-
-&-close {
+        .modal-close {
     position: absolute;
     @extend %flexjustyaling;
     top: 8px;
@@ -40,24 +40,24 @@
     transition: $transition-fill;
     cursor: pointer;
 }
-& .mailing-modal {
+.modal .mailing-modal {
     margin-bottom: 10px;
 }
 
-& .mailing-modal:nth-child(4) {
+.modal .mailing-modal:nth-child(4) {
     margin-bottom: 20px;
 }
-& .primary-button {
+.modal .primary-button {
     display: block;
     min-width: 200px;
     margin-right: auto;
     margin-left: auto;
 
 }
-&-close .modal-close-back:focus,
-&-close .modal-close-back:hover {
+.modal-close .modal-close-back:focus,
+.modal-close .modal-close-back:hover {
     fill: $coloraccent;
-}
+
 
 }
 .is-hidden {
@@ -111,6 +111,7 @@
     resize: none;
     border: 1px solid $colorinputborder ;
     border-radius: 4px;
+    transition: $transition-border;
 }
 
 .mailing-input:focus,

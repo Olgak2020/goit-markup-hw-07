@@ -4,36 +4,13 @@
     border-bottom: 1px solid $colorheaderborder;
 
     background-color:$colortitleprimary ;
+}
 
-&-page {
+
+.header-page {
     display: flex;
 }
 
 
 
-&-nav {
-    @extend %flexaling;
-}
 
-&-nav.link {
-
-    color:$colortitle;
-    display: block;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    
-    text-decoration: none;
-
-    transition:$transition-color;
-}
-
- &-nav.link:hover,
- &-nav.link:focus {
-    color:$coloraccent ;
-
-}
-
-}

@@ -16,20 +16,22 @@
     text-align: center;
     letter-spacing: 0.03em;
     transition: $transition-bg, $transition-boxshadow, $transition-color;
+}
 
-
-&:hover,
-&:focus {
+.button :hover,
+.button :focus {
     color:$colortitleprimary ;
     background-color: $coloraccent;
     box-shadow: 0px 4px 4px 0px $colorshadow;
 }
-}
-.primary-button {
-    display: inline-block;
-     min-width: 215px;
+
+
+
+    .primary-button {
+       display: flex;
+   justify-content: space-between;
+    min-width: 215px;
     margin: 0 auto;
-    
     align-items: center;
     padding: 10px 32px;
     border-radius: 4px;
@@ -50,11 +52,11 @@
     
     box-shadow: 0px 0.4px 0.4px 0px $colorshadowbt;
     transition: $transition-bg ,  $transition-boxshadow;
+    }
 
-
-&:hover,
+.primary-button:hover,
 .primary-button:focus {
     background: $coloraccentsecondary;
     box-shadow: 0px 4px 4px 0px $colorshadow;
-}
+
 }
